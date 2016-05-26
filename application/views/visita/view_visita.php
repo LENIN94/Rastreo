@@ -4,8 +4,6 @@
     <!-- Bootstrap -->
     <script src="<?php echo base_url(); ?>vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>js/jsVisita.js"></script>
-
-
 <?php $this->load->view('view_menu');?>
 
     <div class="">
@@ -37,8 +35,6 @@
                                 <th>Hora Llegada</th>
                                 <th>Hora Salida</th>
                                 <th>Ubicacion</th>
-
-
                             </tr>
                             </thead>
                             <tbody>

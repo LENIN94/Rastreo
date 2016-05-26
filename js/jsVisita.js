@@ -7,9 +7,6 @@ $(document).ready(function () {
         "order": [[ 0, "desc" ]]
     } );
 
-
-
-
     $("#datatable-responsive tbody tr").on("click", function () {
         $('#txtID').val($(this).find("td:first").text());
         $.getJSON(baseurl + "Visita/SelectID", {ID: $("#txtID").val()}, function (JSON) {
@@ -23,23 +20,12 @@ $(document).ready(function () {
             $('#txtLatitud').val(JSON[0].vchLatitud);
             $('#txtLongitud').val(JSON[0].vchLongitud);
             $('#btnMapa').attr("href", "https://maps.google.com/?q="+JSON[0].vchLatitud+","+JSON[0].vchLongitud);
-          
-
         });
         $('#myModal').modal('show');
     });
 
 
-
-
-
-    $("#btnNew").on("click", function () {
-        $('#myModal').modal('show');
-        $('#divID').hide();
-        $('#divEstatus').hide();
-        $('#tipoOp').val(0);
-
-    });
+   
 
 
 });
