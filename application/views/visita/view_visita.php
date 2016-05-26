@@ -53,9 +53,6 @@
                                     echo "<td>" . $row->tmHoraE . "</td>";
                                     echo "<td>" . $row->tmHoraS . "</td>";
                                     echo "<td>" . $row->vchUbicacion . "</td></tr>";
-
-
-
                                 }
                             }
                             ?>
@@ -66,8 +63,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
          style="display: none;">
         <div class="modal-dialog">
