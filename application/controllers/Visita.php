@@ -25,7 +25,13 @@ class Visita extends CI_Controller
         );
         $this->load->view('visita/view_visita', $data);
     }
-    
+    public function mapa()
+    {
+
+        $this->load->view('visita/view_mapa');
+    }
+
+
     public  function SelectID(){
         $ID = $this->input->get("ID");
         $Data= $this->mdl_visita->GETOne($ID);

@@ -51,21 +51,10 @@
 
                                 </ul>
                             </li>
-                            <li><a><i class="fa fa-bar-chart-o"></i>Graficas<span class="fa fa-chevron-down"></span></a>
-                                <ul class="nav child_menu">
-                                    <li><a href="chartjs.html">Reporte Mensual</a></li>
-
-                                </ul>
-                            </li>
-
                         </ul>
                     </div>
-
-
                 </div>
                 <!-- /sidebar menu -->
-
-              
             </div>
         </div>
 

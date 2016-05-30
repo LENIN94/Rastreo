@@ -57,8 +57,9 @@
                             <div class="block">
                                 <div class="tags">
                                     <a href="" class="tag" style="background: #880000">
-                                        <span>Entertainment</span>
+                                        <span >Entertainment</span>
                                     </a>
+
                                 </div>
                                 <div class="block_content">
                                     <h2 class="title">

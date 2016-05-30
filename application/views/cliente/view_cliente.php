@@ -1,15 +1,16 @@
-<?php $this->load->view('view_head');?>
+<?php $this->load->view('view_head'); ?>
     <!-- jQuery -->
     <script src="<?php echo base_url(); ?>vendors/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap -->
     <script src="<?php echo base_url(); ?>vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
     <script src="<?php echo base_url(); ?>js/jsCliente.js"></script>
-<script type="text/css">
 
+    <script type="text/javascript">
 
-</script>
+    </script>
 
-<?php $this->load->view('view_menu');?>
+<?php $this->load->view('view_menu'); ?>
 
     <div class="">
         <div class="clearfix"></div>
@@ -29,7 +30,9 @@
                         <div class="clearfix"></div>
                     </div>
                     <div class="x_content">
-                        <button type="button" id="btnNew" class="btn btn-success" > <span class="glyphicon glyphicon-plus"></span> Agregar Cliente</button>
+                        <button type="button" id="btnNew" class="btn btn-success"><span
+                                class="glyphicon glyphicon-plus"></span> Agregar Cliente
+                        </button>
 
                         <table id="datatable-responsive" class="table table-striped table-bordered dt-responsive nowrap"
                                cellspacing="0" width="100%">
@@ -55,7 +58,7 @@
                                     echo "<td>" . $row->vchDireccion . "</td>";
                                     echo "<td>" . $row->vchTel . "</td>";
                                     echo "<td>" . $row->vchCorreo . "</td></tr>";
-                                    
+
 
                                 }
                             }
@@ -87,7 +90,7 @@
                     </div>
                     <div class="x_content">
                         <br>
-                        <form class="form-horizontal form-label-left"  name="formulario" id="formulario"  role="form">
+                        <form class="form-horizontal form-label-left" name="formulario" id="formulario" role="form">
                             <input type="hidden" id="tipoOp">
                             <div id="divID" class="form-group">
                                 <label class="control-label col-md-3 col-sm-3 col-xs-12">ID: </label>
@@ -127,11 +130,60 @@
                                     <input id="txtEmail" type="text" class="form-control" placeholder="Email">
                                 </div>
                             </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-md-3  ">Ubicación:</label>
+                                <div class="col-sm-12 ">
+
+                                    <style>
+                                        #infoPanel {
+                                            float: left;
+                                            margin-left: 10px;
+                                        }
+
+                                        #infoPanel div {
+                                            margin-bottom: 5px;
+                                        }
+                                        #mapCanvas {
+                                            display: block;
+                                            width: 100%;
+                                            height: 400px;
+                                        }
+                                    </style>
+                                        <div id="mapCanvas"  ></div>
+                                        <div id="infoPanel">
+                                            <b>Dirección del punto:</b>
+                                            <div id="address"></div>
+                                        </div>
+                                    </div>
+
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Latitud:</label>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <input id="txtLatitud" type="text" class="form-control" placeholder="Latitud">
+                                </div>
+                            </div>
+
+
+                            <div class="form-group">
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Longitud:</label>
+                                <div class="col-md-9 col-sm-9 col-xs-12">
+                                    <input id="txtLongitud" type="text" class="form-control" placeholder="longitud">
+                                </div>
+                            </div>
+
+
                             <div class="ln_solid"></div>
                             <div class="form-group">
                                 <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                                     <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
-                                    <button type="button" id="btnDelete" class="btn btn-danger" data-toggle="modal" data-target=".bs-example-modal-sm">Eliminar</button>
+                                    <button type="button" id="btnDelete" class="btn btn-danger" data-toggle="modal"
+                                            data-target=".bs-example-modal-sm">Eliminar
+                                    </button>
                                     <button type="submit" class="btn btn-success">Guardar Cambios</button>
                                 </div>
                             </div>
@@ -145,15 +197,17 @@
         <!-- /.modal-dialog -->
     </div>
 
-    <div id="modalConfirm" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true" style="display: ;">
+    <div id="modalConfirm" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true"
+         style="display: ;">
         <div class="modal-dialog modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span>
                     </button>
                     <h4 class="modal-title" id="myModalLabel2">Eliminar</h4>
                 </div>
-                <div class="modal-body" align="center" >
+                <div class="modal-body" align="center">
                     <p>Realmente desea Eliminar?</p>
                     <button type="button" class="btn btn-warning" data-dismiss="modal">No</button>
                     <button type="button" id="btnYesDelete" class="btn btn-primary">Si</button>

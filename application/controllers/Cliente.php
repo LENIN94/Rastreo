@@ -43,7 +43,9 @@ class Cliente extends CI_Controller
             'vchRFC' => $JSON->vchRFC,
             'vchCorreo' => $JSON->vchCorreo,
             'vchDireccion'=>$JSON->vchDireccion,
-            'vchTel'=>$JSON->vchTel
+            'vchTel'=>$JSON->vchTel,
+            'vchLatitud'=>$JSON->vchLatitud,
+            'vchLongitud'=>$JSON->vchLongitud
         );
         if( $this->mdl_cliente->Update($JSON->intIdCliente,$DATA)) {
             $response["error_msg"] = "<div class='alert alert-success text-center' alert-dismissable> <button type='button' class='close' data-dismiss='alert'>&times;</button> Informacion Guardada Correctamente<meta http-equiv='refresh' content='1'></div>";
@@ -79,7 +81,9 @@ class Cliente extends CI_Controller
             'vchRFC' => $JSON->vchRFC,
             'vchCorreo' => $JSON->vchCorreo,
             'vchDireccion'=>$JSON->vchDireccion,
-            'vchTel'=>$JSON->vchTel
+            'vchTel'=>$JSON->vchTel,
+            'vchLatitud'=>$JSON->vchLatitud,
+            'vchLongitud'=>$JSON->vchLongitud
         );
         if( $this->mdl_cliente->Insert($DATA)) {
             $response["error_msg"] = "<div class='alert alert-success text-center' alert-dismissable> <button type='button' class='close' data-dismiss='alert'>&times;</button> Informacion Guardada Correctamente<meta http-equiv='refresh' content='1'></div>";
