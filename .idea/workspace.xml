@@ -2,48 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="834328b3-ef84-4a80-a1bc-a46a2a704cf4" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/controllers/wsRest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/functions.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/visita/view_mapa.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/application/views/visita/view_mapa2.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/jsMapsCliente.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/american-express.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bootstrap-colorpicker/alpha-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bootstrap-colorpicker/alpha.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bootstrap-colorpicker/hue-horizontal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bootstrap-colorpicker/hue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/bootstrap-colorpicker/saturation.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/data.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/favicon.ico" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/icons.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/mastercard.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/pachuca.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/paypal2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/picture-2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/picture.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/picture2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/prod1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/prod2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/prod3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/prod4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/prod5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sprite-skin-flat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sprite-skin-modern.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sprite-skin-nice.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/sprite-skin-simple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/visa.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Cliente.php" afterPath="$PROJECT_DIR$/application/controllers/Cliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/controllers/Visita.php" afterPath="$PROJECT_DIR$/application/controllers/Visita.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/mdl_api.php" afterPath="$PROJECT_DIR$/application/models/mdl_api.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/models/mdl_login.php" afterPath="$PROJECT_DIR$/application/models/mdl_login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/cliente/view_cliente.php" afterPath="$PROJECT_DIR$/application/views/cliente/view_cliente.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/main/view_main2.php" afterPath="$PROJECT_DIR$/application/views/main/view_main2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/view_menu.php" afterPath="$PROJECT_DIR$/application/views/view_menu.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/application/views/visita/view_visita.php" afterPath="$PROJECT_DIR$/application/views/visita/view_visita.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/jsCliente.js" afterPath="$PROJECT_DIR$/js/jsCliente.js" />
     </list>
     <ignored path="Rastreo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -475,7 +434,7 @@
       <workItem from="1464453051270" duration="4428000" />
       <workItem from="1464488618900" duration="7475000" />
       <workItem from="1464540559426" duration="629000" />
-      <workItem from="1464545245267" duration="19828000" />
+      <workItem from="1464545245267" duration="19881000" />
     </task>
     <task id="LOCAL-00001" summary="commit desde phpstorm">
       <created>1464287807189</created>
@@ -484,11 +443,18 @@
       <option name="project" value="LOCAL" />
       <updated>1464287807189</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="commit desde phpstorm- Localizacion Google maps, Clientes WSRest">
+      <created>1464571813657</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1464571813657</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90313000" />
+    <option name="totallyTimeSpent" value="90366000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -527,7 +493,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="commit desde phpstorm" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit desde phpstorm" />
+    <MESSAGE value="commit desde phpstorm- Localizacion Google maps, Clientes WSRest" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit desde phpstorm- Localizacion Google maps, Clientes WSRest" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
