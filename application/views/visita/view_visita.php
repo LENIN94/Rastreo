@@ -77,6 +77,7 @@
                     </div>
                     <div class="x_content">
                         <br>
+                        <div id="msg" ></div>
                         <form class="form-horizontal form-label-left"  name="formulario" id="formulario"  role="form">
                             <input type="hidden" id="tipoOp">
                             <div id="divID" class="form-group">
@@ -151,7 +152,9 @@
                             <div class="form-group">
                                 <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                                     <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
-
+                                    <a id="btnPrint"      class="btn  btn-primary"><span
+                                            class="glyphicon glyphicon-print"></span> Imprimir
+                                    </a>
                                 </div>
                             </div>
                             <div id="mensaje" name="mensaje"></div>

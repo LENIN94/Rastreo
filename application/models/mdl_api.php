@@ -113,11 +113,11 @@ class mdl_api extends CI_Model
 
         $Fecha = date("Y-m-d");
         $Hora = date("H:i:s");
-        $sql = "insert into  tblVisita values (null,$ID, $Cliente, '$Dir','$Lat', '$Long',  null , '$Fecha', '$Hora',null ) ;";
+        $sql = "insert into  tblVisita values (null,$ID, $Cliente, '$Dir','$Lat', '$Long',  null , '$Fecha', '$Hora',null,0 ) ;";
         if ($this->db->query($sql)) {
             // User successfully u
             $response["error"] = false;
-            $response["message"] = 'Visita almacenada d}en la bd correctamente';
+            $response["message"] = 'Visita almacenada en la bd correctamente';
         } else {
             // Failed
             $response["error"] = true;

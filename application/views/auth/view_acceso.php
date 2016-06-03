@@ -42,7 +42,7 @@ $this->load->view('constant');
         <div class="animate form login_form">
             <section class="login_content">
                 <form id="loginform" name="loginform" role="form">
-                    <h1>Login</h1>
+                    <h1>Acceso</h1>
                     <div>
                         <input type="text" class="form-control" placeholder="Usuario" id="txtusuario"  />
                     </div>
