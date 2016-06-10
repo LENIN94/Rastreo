@@ -15,6 +15,36 @@ class Visita extends CI_Controller
     {
         parent::__construct();
         $this->load->model('mdl_visita');
+        $this->load->library('pdfrpt'); // Load library
+        $this->pdfrpt->fontpath = 'font/'; // Specify font folder
+    }
+    function  PrintD(){
+
+        $ID = $this->uri->segment(3);
+        $Data= $this->mdl_visita->GETOne($ID);
+        $this->pdfrpt->SetFont('Arial', '', 12); // definimos el tipo de letra y el tama�o
+        $this->pdfrpt->AddPage(); // agregamos la pagina
+        $this->pdfrpt->SetMargins(20, 20, 20); // definimos los margenes en este caso estan en milimetros
+        $this->pdfrpt->Ln(5); // dejamos un peque�o espacio de 10 milimetros
+        $this->pdfrpt->SetWidths(array(40, 133));
+        $this->pdfrpt->Row(array(utf8_decode('Vendedor'), utf8_decode($Data[0]->vchVendedor)));
+        $this->pdfrpt->Row(array('Cliente', utf8_decode($Data[0]->vchCliente)));
+        $this->pdfrpt->Row(array(utf8_decode('Ubicacion'), utf8_decode( $Data[0]->vchUbicacion)));
+        $this->pdfrpt->Row(array(utf8_decode('Fecha '), utf8_decode($Data[0]->dtFecha)));
+        $this->pdfrpt->Row(array('Hora Inicio', utf8_decode($Data[0]->tmHoraE)));
+        $this->pdfrpt->Row(array(utf8_decode('Hora Fin'), utf8_decode( $Data[0]->tmHoraS)));
+        $this->pdfrpt->Row(array(utf8_decode('Comentario'), utf8_decode( $Data[0]->txtComentario)));
+        $this->pdfrpt->Row(array(utf8_decode('Estatus'), utf8_decode( $Data[0]->intConcluido)));
+
+
+
+
+
+
+
+
+
+        $this->pdfrpt->Output("Visita.pdf", 'I');
     }
 
     public function index()
@@ -25,7 +55,13 @@ class Visita extends CI_Controller
         );
         $this->load->view('visita/view_visita', $data);
     }
-    
+    public function mapa()
+    {
+
+        $this->load->view('visita/view_mapa');
+    }
+
+
     public  function SelectID(){
         $ID = $this->input->get("ID");
         $Data= $this->mdl_visita->GETOne($ID);

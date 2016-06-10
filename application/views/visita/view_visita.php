@@ -4,8 +4,6 @@
     <!-- Bootstrap -->
     <script src="<?php echo base_url(); ?>vendors/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url(); ?>js/jsVisita.js"></script>
-
-
 <?php $this->load->view('view_menu');?>
 
     <div class="">
@@ -37,8 +35,6 @@
                                 <th>Hora Llegada</th>
                                 <th>Hora Salida</th>
                                 <th>Ubicacion</th>
-
-
                             </tr>
                             </thead>
                             <tbody>
@@ -53,9 +49,6 @@
                                     echo "<td>" . $row->tmHoraE . "</td>";
                                     echo "<td>" . $row->tmHoraS . "</td>";
                                     echo "<td>" . $row->vchUbicacion . "</td></tr>";
-
-
-
                                 }
                             }
                             ?>
@@ -66,8 +59,6 @@
             </div>
         </div>
     </div>
-
-
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"
          style="display: none;">
         <div class="modal-dialog">
@@ -86,6 +77,7 @@
                     </div>
                     <div class="x_content">
                         <br>
+                        <div id="msg" ></div>
                         <form class="form-horizontal form-label-left"  name="formulario" id="formulario"  role="form">
                             <input type="hidden" id="tipoOp">
                             <div id="divID" class="form-group">
@@ -133,9 +125,9 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Hora de Termino:</label>
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12">Hora de Término:</label>
                                 <div class="col-md-9 col-sm-9 col-xs-12">
-                                    <input id="txtHoraT" type="text" class="form-control" readonly="readonly"  placeholder="Email">
+                                    <input id="txtHoraT" type="text" class="form-control" readonly="readonly"  placeholder="Hora de Término">
                                 </div>
                             </div>
                             <div class="form-group">
@@ -160,7 +152,9 @@
                             <div class="form-group">
                                 <div class="col-md-9 col-sm-9 col-xs-12 col-md-offset-3">
                                     <button type="button" class="btn btn-warning" data-dismiss="modal">Cancelar</button>
-
+                                    <a id="btnPrint"      class="btn  btn-primary"><span
+                                            class="glyphicon glyphicon-print"></span> Imprimir
+                                    </a>
                                 </div>
                             </div>
                             <div id="mensaje" name="mensaje"></div>
